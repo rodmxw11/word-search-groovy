@@ -4,7 +4,16 @@
 
 
 - English letter frequencies: https://www3.nd.edu/~busiforc/handouts/cryptography/letterfrequencies.html
-- Anagram Solver: https://www.wordplays.com/anagram-solver/irshol
+- Anagram Solver: https://www.wordplays.com/anagram-solver/ETAINOSHRLD
 
-1. atone
-2. roils
+[ETAINOSHRLD][LD] -- 9 + 1
+
+
+1. atone / roils -- duplicate "0"
+
+2. earth / lions -- no "d"
+
+3. earth / dinos -- no "l"
+
+
+
