@@ -1,14 +1,22 @@
-not=[^lionsthbupycgd]
-grep -E -i "^[arm][erm][ea]${not}${not}\$" words.txt
-grep -E -i "^[arm][erm]${not}[earm]${not}\$" words.txt
-grep -E -i "^[arm][erm]${not}${not}[earm]\$" words.txt
-grep -E -i "^[arm]${not}[ea][earm]${not}\$" words.txt
-grep -E -i "^[arm]${not}[ea]${not}[earm]\$" words.txt
-grep -E -i "^[arm]${not}${not}[earm][earm]\$" words.txt
-grep -E -i "^${not}[erm][ea][earm]${not}\$" words.txt
-grep -E -i "^${not}[erm][ea]${not}[earm]\$" words.txt
-grep -E -i "^${not}[erm]${not}[earm][earm]\$" words.txt
-grep -E -i "^${not}${not}[ea][earm][earm]\$" words.txt
+# 20220209: HUMOR : earth, lions
+tfile=wordle.TMP
+not=[^eatlins]
+YES=[orh]
+echo '' > $tfile
+grep -E -i "^${not}${not}${YES}${YES}${YES}\$" words.txt >> $tfile  # 00111
+grep -E -i "^${not}${YES}${not}${YES}${YES}\$" words.txt >> $tfile  # 01011
+grep -E -i "^${not}${YES}${YES}${not}${YES}\$" words.txt >> $tfile  # 01101
+grep -E -i "^${not}${YES}${YES}${YES}${not}\$" words.txt >> $tfile  # 01110
+grep -E -i "^${YES}${not}${not}${YES}${YES}\$" words.txt >> $tfile  # 10011
+grep -E -i "^${YES}${not}${YES}${not}${YES}\$" words.txt >> $tfile  # 10101
+grep -E -i "^${YES}${not}${YES}${YES}${not}\$" words.txt >> $tfile  # 10110
+grep -E -i "^${YES}${YES}${not}${not}${YES}\$" words.txt >> $tfile  # 11001
+grep -E -i "^${YES}${YES}${not}${YES}${not}\$" words.txt >> $tfile  # 11010
+grep -E -i "^${YES}${YES}${YES}${not}${not}\$" words.txt >> $tfile  # 11100
+
+cat $tfile | grep -v -i "\." | grep -i "o" | grep -i "r" | grep -i "h" | \
+    grep -i "..[^ro].[^h]" | sort | uniq
+
 
 
 
