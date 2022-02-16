@@ -1,0 +1,28 @@
+// See: https://github.com/spockframework/spock-example/blob/master/build.gradle
+
+apply plugin: "groovy"
+apply plugin: "application"
+
+version = "1.0"
+description = "Wordle solutions exploration"
+
+// Spock works with Java 1.8 and above
+sourceCompatibility = 1.8
+
+repositories {
+  // Spock releases are available from Maven Central
+  mavenCentral()
+}
+
+dependencies {
+  // mandatory dependencies for using Spock
+  implementation "org.codehaus.groovy:groovy:3.0.8"
+  testImplementation 'org.spockframework:spock-core:2.1-M2-groovy-3.0'
+}
+
+test {
+  useJUnitPlatform()
+  testLogging {
+    events "passed", "skipped", "failed"
+  }
+}

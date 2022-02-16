@@ -1,1 +1,3 @@
 *.TMP
+.idea/
+build/
