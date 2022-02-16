@@ -15,5 +15,15 @@
 
 3. earth / dinos -- no "l"
 
+## Nice Medium articles
+
+### A Word on Wordle
+
+[A Word on Wordle](https://medium.com/towards-data-science/a-frequency-analysis-on-wordle-9c5778283363)
+
+### Forget Luck: Optimized Wordle Strategy
+
+[Forget Luck: Optimized Wordle Strategy](https://betterprogramming.pub/forget-luck-optimized-wordle-strategy-using-bigquery-c676771e316f)
+
 
 
